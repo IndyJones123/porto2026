@@ -47,23 +47,23 @@ const projects: Project[] = [
             overview: {
                 mainText: 'A specialized marketplace system designed to facilitate item trading across multiple game servers.',
                 items: [
-                    { url: '/projects/markethero.png', description: 'Centralized Marketplace RMT ( Real Money Trading ) System for OG x AOR Official Server.' },
+                    { url: 'markethero.png', description: 'Centralized Marketplace RMT ( Real Money Trading ) System for OG x AOR Official Server.' },
                 ]
             },
             features: {
                 mainText: 'Advanced transactional features ensuring speed and security.',
                 items: [
-                    { url: '/projects/topup.png', description: 'Topup System Integration Using QR CODE QRIS, VA BANK from duitku payment gateway for OG x AOR Official Server.' },
-                     { url: '/projects/market.png', description: 'Marketplace System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.' },
-                     { url: '/projects/marketauction.png', description: 'Livetime Auction System + Livechat System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.' },
-                     { url: '/projects/marketflashsale.jpg', description: 'Flash Sale System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.' },
-                     { url: '/projects/markethistory.png', description:'History Action System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
-                     { url: '/projects/marketchart.png', description:'Livetime Market Chart Price System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
-                     { url: '/projects/marketragpoly.png', description:'Ragpoly Monopoloy Game Gacha System Integration for OG x AOR Official Server.'},
-                     { url: '/projects/marketwithdrawal.png', description:'Withdrawal System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
-                     { url: '/projects/marketnpc.gif', description:'NPC System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
-                     { url: '/projects/markethook.jpg', description:'Market Hook For Withdrawal , Bidding , Auction , Flash Sale , Transaction System Integration Using Discord Hook BOT Server for OG x AOR Official Server.'},
-                     { url: '/projects/marketofficial.png', description:'And Many More Features Details can be checked on the official wikipedia server. https://aorxog.gitbook.io/wiki/server-feature/marketplace-hot'}
+                    { url: 'topup.png', description: 'Topup System Integration Using QR CODE QRIS, VA BANK from duitku payment gateway for OG x AOR Official Server.' },
+                     { url: '/market.png', description: 'Marketplace System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.' },
+                     { url: '/marketauction.png', description: 'Livetime Auction System + Livechat System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.' },
+                     { url: '/marketflashsale.jpg', description: 'Flash Sale System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.' },
+                     { url: '/markethistory.png', description:'History Action System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
+                     { url: '/marketchart.png', description:'Livetime Market Chart Price System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
+                     { url: '/marketragpoly.png', description:'Ragpoly Monopoloy Game Gacha System Integration for OG x AOR Official Server.'},
+                     { url: '/marketwithdrawal.png', description:'Withdrawal System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
+                     { url: '/marketnpc.gif', description:'NPC System Integration Selling Item RMT ( Real Money Trading ) for OG x AOR Official Server.'},
+                     { url: '/markethook.jpg', description:'Market Hook For Withdrawal , Bidding , Auction , Flash Sale , Transaction System Integration Using Discord Hook BOT Server for OG x AOR Official Server.'},
+                     { url: '/marketofficial.png', description:'And Many More Features Details can be checked on the official wikipedia server. https://aorxog.gitbook.io/wiki/server-feature/marketplace-hot'}
                 ]
             },
 responsibilities: {
@@ -90,23 +90,23 @@ responsibilities: {
             overview: {
                 mainText: 'The official digital hub for the Association of Digital Business Professionals and Educators.',
                 items: [
-                    { url: '/projects/apbisdi1.png', description: 'Clean, professional landing page designed for easy navigation of academic standards.' }
+                    { url: '/apbisdi1.png', description: 'Clean, professional landing page designed for easy navigation of academic standards.' }
                 ]
             },
             features: {
                 mainText: 'Tools for professional growth and academic collaboration.',
                 items: [
-                    { url: '/projects/apbisdi2.png', description: 'Membership management portal with institution-level controls and reporting.' },
-                    { url: '/projects/apbisdi3.png', description: 'Membership management portal with institution-level controls and reporting.' },
-                    { url: '/projects/apbisdi4.png', description: 'Dashboard for easy navigation of academic standards.' },
-                    { url: '/projects/apbisdi5.png', description: 'Dynamic SMTP email notifications for membership updates.' },
+                    { url: '/apbisdi2.png', description: 'Membership management portal with institution-level controls and reporting.' },
+                    { url: '/apbisdi3.png', description: 'Membership management portal with institution-level controls and reporting.' },
+                    { url: '/apbisdi4.png', description: 'Dashboard for easy navigation of academic standards.' },
+                    { url: '/apbisdi5.png', description: 'Dynamic SMTP email notifications for membership updates.' },
                     
                 ]
             },
             responsibilities: {
                 mainText: 'Full-stack development and SEO optimization.',
                 items: [
-                    { url: '/projects/apbisdi6.png', description: 'Fully built website with all features. With Preparing Presentation and Annual Meeting Report 2024.' },
+                    { url: '/apbisdi6.png', description: 'Fully built website with all features. With Preparing Presentation and Annual Meeting Report 2024.' },
                 ]
             }
         }
@@ -128,13 +128,13 @@ responsibilities: {
             features: {
                 mainText: 'Secure and compliant financial operation modules.',
                 items: [
-                    { url: '/projects/confidential.png', description: 'Confidential feature implementation.' }
+                    { url: '/confidential.png', description: 'Confidential feature implementation.' }
                 ]
             },
             responsibilities: {
                 mainText: 'Backend development focus for surrounding applications.',
                 items: [
-                    { url: '/projects/confidential.png', description: 'Developed custom clients and internal service.' }
+                    { url: '/confidential.png', description: 'Developed custom clients and internal service.' }
                 ]
             }
         }
@@ -166,8 +166,21 @@ const currentImage = computed(() => {
     const details = getCurrentTabDetails.value;
     if (!details || !details.items || details.items.length === 0) return '';
     const imgItem = details.items[activeImageIndex.value];
-    return imgItem?.url || details.items[0]?.url || '';
+    return resolvePath(imgItem?.url || details.items[0]?.url || '');
 });
+
+const resolvePath = (url: string | undefined) => {
+    if (!url) return '';
+    // Keep external URLs and data URIs as-is
+    if (/^(https?:)?\/\//.test(url) || url.startsWith('data:')) return url;
+    
+    const base = import.meta.env.BASE_URL || '/';
+    // Ensure base ends with / and url doesn't start with /
+    const cleanBase = base.endsWith('/') ? base : `${base}/`;
+    const cleanUrl = url.startsWith('/') ? url.slice(1) : url;
+    
+    return `${cleanBase}${cleanUrl}`;
+};
 
 const currentContent = computed(() => {
     const details = getCurrentTabDetails.value;
@@ -207,10 +220,10 @@ const getProjectAccent = computed(() => {
                     
                     <!-- Improved Project Thumbnail -->
                     <div class="relative h-[220px] overflow-hidden">
-                        <img v-if="project.details?.overview.items[0]" 
-                             :src="project.details.overview.items[0].url" 
-                             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
-                             alt="Thumbnail">
+                            <img v-if="project.details?.overview.items[0]" 
+                                :src="resolvePath(project.details.overview.items[0].url)" 
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                                alt="Thumbnail">
                         <div v-else :class="['w-full h-full flex items-center justify-center text-5xl bg-gradient-to-br', project.gradient]">
                             {{ project.icon }}
                         </div>
@@ -315,7 +328,7 @@ const getProjectAccent = computed(() => {
                                          @click="activeImageIndex = idx"
                                          :class="['w-24 h-16 rounded-xl overflow-hidden border-2 cursor-pointer transition-all flex-shrink-0 relative group', activeImageIndex === idx ? 'scale-105 z-10' : 'opacity-40 hover:opacity-100']"
                                          :style="{ borderColor: activeImageIndex === idx ? getProjectAccent : 'rgba(255,255,255,0.1)' }">
-                                        <img :src="img.url" class="w-full h-full object-cover" alt="Thumb">
+                                        <img :src="resolvePath(img.url)" class="w-full h-full object-cover" alt="Thumb">
                                         <div v-if="activeImageIndex === idx" class="absolute inset-0 bg-white/10"></div>
                                     </div>
                                 </div>
