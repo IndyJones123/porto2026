@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0a0e27;
+  --color-bg-secondary: #111733;
+  --color-bg-card: #1a2140;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #8b9cc9;
+  --color-accent-blue: #4a9eff;
+  --color-accent-light: #7db9ff;
+  --color-accent-rabbit: #ffb3d9;
+
+  --font-sans: 'Inter', sans-serif;
+
+  --animate-blob: blob 7s infinite;
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+}
+
+:root {
+  /* Keep these for backwards compatibility if needed, or for PrimeVue integration */
+  --bg-primary: #0a0e27;
+  --bg-secondary: #111733;
+  --bg-card: #1a2140;
+  --text-primary: #ffffff;
+  --text-secondary: #8b9cc9;
+  --accent-blue: #4a9eff;
+  --accent-light: #7db9ff;
+  --accent-rabbit: #ffb3d9;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
